@@ -1,0 +1,15 @@
+{
+  "name": "exchanges",
+  "version": "1.0.0",
+  "description": "currency exchanges",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "co": "cypress open"
+  },
+  "author": "k",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.8.2"
+  }
+}
