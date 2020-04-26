@@ -1,12 +1,5 @@
-import {
-    populateList,
-    showPokemon,
-    pokemonHandler
-} from "./components/ui.js"
-import {
-    getPokemonListData,
-    getPokemonData
-} from "./components/load_data.js"
+import { populateList, showPokemon, pokemonHandler } from './components/ui.js';
+import { getPokemonListData, getPokemonData } from './components/load_data.js';
 
 async function changePokemon(id) {
     const pokemon = await getPokemonData(id);
@@ -15,7 +8,7 @@ async function changePokemon(id) {
 
 async function setup() {
     const pokemonList = await getPokemonListData();
-    populateList(pokemonList,changePokemon);
+    populateList(pokemonList, changePokemon);
     changePokemon();
     pokemonHandler(changePokemon);
 }
