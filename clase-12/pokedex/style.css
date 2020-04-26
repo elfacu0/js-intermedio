@@ -2,7 +2,8 @@
     margin: 0px;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     color: white;
@@ -11,28 +12,30 @@ html, body {
 body {
     background-color: #0d0d0d;
 }
-.pokemonList{
+.pokemonList {
     border: 5px solid darkslategrey;
     padding: 0px;
     overflow-y: scroll;
     max-height: 100vh;
 }
 
-.pokemonList p{
+.pokemonList p {
     margin: 1px;
     width: 100%;
     border: 2px solid darkslategrey;
+    cursor: pointer;
 }
-.pokemon{
+.pokemon {
     padding: 20px 0px 20px 0px;
     border: 10px solid #263238;
 }
-.pokemon-images{
+.pokemon-images {
     display: flex;
     justify-content: space-around;
 }
 
-.nextPokemon, .previousPokemon {
+.nextPokemon,
+.previousPokemon {
     height: 40%;
 }
 
