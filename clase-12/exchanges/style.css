@@ -1,0 +1,32 @@
+html,body{
+    background-color: #262626;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.output{
+    color: #05F29B;
+}
+
+.output > ul{
+    margin: 0px;
+}
