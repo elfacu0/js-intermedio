@@ -1,28 +1,27 @@
-const currencyOutput = document.querySelector(".output-currencies");
-const currencyInput = document.querySelector(".input-currency");
-const date = document.querySelector("#date");
+const currencyOutput = document.querySelector('.output-currencies');
+const currencyInput = document.querySelector('.input-currency');
+const date = document.querySelector('#date');
 let exchanges = {};
 
-date.addEventListener("click", () => {
-    console.log("ASD");
+date.addEventListener('click', () => {
     getExchanges(date.value, currencyInput.value);
 });
 
-currencyInput.addEventListener("change", () => {
+currencyInput.addEventListener('change', () => {
     getExchanges(date.value, currencyInput.value);
 });
 
 function populateCurrencyInput(exchangesRates) {
-    currencyInput.innerHTML = "";
-    Object.entries(exchangesRates).forEach(currencyName => {
-        var currency = document.createElement("option");
+    currencyInput.innerHTML = '';
+    Object.entries(exchangesRates).forEach((currencyName) => {
+        var currency = document.createElement('option');
         currency.text = currencyName[0];
         currency.value = currencyName[0];
         currencyInput.add(currency);
     });
 }
 
-function getExchanges(date, base = "USD") {
+function getExchanges(date, base = 'USD') {
     fetch(`https://api.exchangeratesapi.io/${date}?base=${base}`)
         .then(function (response) {
             return response.json();
@@ -37,9 +36,9 @@ function getExchanges(date, base = "USD") {
 }
 
 function populateCurrencyOutput() {
-    currencyOutput.innerHTML = "";
-    Object.entries(exchanges).forEach(currencyName => {
-        var currency = document.createElement("li");
+    currencyOutput.innerHTML = '';
+    Object.entries(exchanges).forEach((currencyName) => {
+        var currency = document.createElement('li');
         currency.innerText = `${currencyName[0]} : ${currencyName[1]}`;
         currencyOutput.appendChild(currency);
     });
