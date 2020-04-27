@@ -2,3 +2,4 @@ clase-12/exchanges/cypress.json
 clase-12/exchanges/cypress/support/commands.js
 clase-12/exchanges/cypress/support/index.js
 clase-12/exchanges/cypress/plugins/index.js
+node_modules

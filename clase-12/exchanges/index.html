@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <title>Exchanges</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Exchanges</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="input-output">
-            <div class="input">
-                <input id="date" type="date">
-                <select class="input-currency">
-                </select>
+    <body>
+        <div class="container">
+            <div class="chartsContainer">
+                <canvas id="valueChart"></canvas>
+                <canvas id="barChart"></canvas>
             </div>
-            <div class="output">
-                <ul class="output-currencies">
-                </ul>
+            <div class="input-output">
+                <div class="input">
+                    <input id="date" type="date" />
+                    <select class="input-currency"> </select>
+                </div>
+                <div class="output">
+                    <ul class="output-currencies"></ul>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="main.js"></script>
-</body>
-
+        <script src="main.js" type="module"></script>
+    </body>
 </html>
