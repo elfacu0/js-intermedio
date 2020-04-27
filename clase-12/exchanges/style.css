@@ -1,32 +1,90 @@
-html,body{
+html,
+body {
     background-color: #262626;
-    height: 100%;
 }
 
-.container{
+.container {
+    margin-top: 50px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
-.input-output{
+
+.chartsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+canvas {
+    width: 60% !important;
+    height: 100% !important;
+}
+
+.input-output {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.input{
-    display: flex;
     flex-direction: column;
 }
 
-.output{
-    color: #05F29B;
+.input {
+    background-color: gray;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.output > ul{
+.input * {
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 1px;
+    padding: 0px;
+    border: 0px;
+    text-align-last: center;
+}
+
+.output {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.output > ul {
+    width: 100%;
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.output-currencies {
+    padding-left: 0px;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    font-size: 20px;
+    padding: 8px;
+}
+
+li:nth-child(1n) {
+    background-color: #05f29b;
+    color: #262626;
+}
+li:nth-child(3n) {
+    color: #05f29b;
+    background-color: #262626;
 }
