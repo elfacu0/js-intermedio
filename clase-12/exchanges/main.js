@@ -6,13 +6,6 @@ import {
     setChart,
 } from './components/ui.js';
 
-class currency {
-    constructor(rates, date) {
-        this.rates = rates;
-        this.date = date;
-    }
-}
-
 async function setup() {
     let exchanges = await getExchanges();
     let historicalRates = await getHistoricalRates();

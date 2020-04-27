@@ -1,3 +1,6 @@
+import { getExchanges } from '../services/exchanges.js';
+import { createBar } from '../components/comparationBar.js';
+import { createChart } from '../components/valueChart.js';
 const currencyOutput = document.querySelector('.output-currencies');
 const currencyInput = document.querySelector('.input-currency');
 const date = document.querySelector('#date');
@@ -5,9 +8,6 @@ let d = new Date();
 const monthAux = d.getMonth().length > 1 ? d.getMonth() : '0' + d.getMonth();
 const TODAY = `${d.getFullYear()}-${monthAux}-${d.getDate()}`;
 date.defaultValue = TODAY;
-import { getExchanges } from '../services/exchanges.js';
-import { createBar } from '../components/comparationBar.js';
-import { createChart } from '../components/valueChart.js';
 
 let bar = createBar();
 let chart = createChart();
